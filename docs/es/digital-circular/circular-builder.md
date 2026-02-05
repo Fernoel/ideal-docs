@@ -4,7 +4,7 @@
 El módulo Circular Builder es el núcleo para crear contenido para volantes digitales. Aquí puedes generar promociones, ofertas y elementos visuales que se integran en los volantes. La interfaz principal incluye:
 
 - Un menú lateral izquierdo con opciones como Dashboard, Digital Circular, Circular Builder, Categorías, etc.
-- Un selector de tienda o marca (por ejemplo, "Biswa First Store").
+- Un selector de tienda o marca (por ejemplo, "Fernando First Store").
 - Un calendario para seleccionar fechas de publicación.
 - Una tabla (data-grid) que lista los elementos de contenido existentes, con columnas como DÍAS (días de validez), TIPO DE OFERTA (deal type), PROPIETARIO (owner), TAMAÑO (size) y opciones de ver/editar.
 - Un panel de vista previa a la derecha que muestra tarjetas de promoción con imágenes, precios y descuentos.
@@ -65,7 +65,7 @@ La función de Carga Masiva de Contenido te permite crear múltiples elementos d
 
 #### Acceder a Carga Masiva
 1. Ve al módulo Circular Builder.
-2. Selecciona la tienda/marca deseada usando el selector superior (por ejemplo, "Biswa First Store").
+2. Selecciona la tienda/marca deseada usando el selector superior (por ejemplo, "Fernando First Store").
 3. En la interfaz principal, haz clic en el botón **Bulk Upload** (generalmente ubicado cerca del botón "New Card").
 4. Esta acción abre el asistente de Gestión de Contenido titulado algo como "Manage Content for [Store Name]".
 

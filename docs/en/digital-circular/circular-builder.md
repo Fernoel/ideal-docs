@@ -4,7 +4,7 @@
 The Circular Builder module is the core for creating content for digital circulars. Here you can generate promotions, offers, and visual elements that are integrated into circulars. The main interface includes:
 
 - A left sidebar menu with options such as Dashboard, Digital Circular, Circular Builder, Categories, etc.
-- A store or brand selector (e.g., "Biswa First Store").
+- A store or brand selector (e.g., "Fernando First Store").
 - A calendar to select publication dates.
 - A table (data-grid) listing existing content items, with columns such as DAYS (validity days), DEAL TYPE (offer type), OWNER (owner), SIZE (size), and view/edit options.
 - A right-side preview panel displaying promotion cards with images, prices, and discounts.
@@ -65,7 +65,7 @@ The Content Bulk Upload feature allows you to create multiple content items at o
 
 #### Access Bulk Upload
 1. Go to the Circular Builder module.
-2. Select the desired store/brand using the top selector (e.g., "Biswa First Store").
+2. Select the desired store/brand using the top selector (e.g., "Fernando First Store").
 3. In the main interface, click the **Bulk Upload** button (usually located near the "New Card" button).
 4. This action opens the multi-step Manage Content wizard titled something like "Manage Content for [Store Name]".
 
