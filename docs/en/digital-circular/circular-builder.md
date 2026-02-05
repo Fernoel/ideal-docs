@@ -196,6 +196,91 @@ Below is the typical structure of the template (the exact column names and order
 
 > **Tip**: If you have any doubts about specific column values or allowed options (for example, the complete list of Deal Types or Card Styles), ask your administrator or check inside the platform by creating a single promotion first to see the dropdown options.
 
+## Editing Content in Circular Builder
+
+Once content (promotions/cards) has been created and appears in the main table (data-grid) of the Circular Builder module, you can edit them at any time — either individually or in bulk.
+
+There are two main ways to edit content:
+
+1. **Individual Edit** (one promotion at a time)
+2. **Bulk Edit** (multiple promotions at once)
+
+### 1. Editing a Single Promotion
+
+**Steps:**
+
+1. In the Circular Builder main screen, locate the promotion you want to edit in the table.
+2. Select the desired row by clicking the checkbox at the beginning of the row (or simply click on the row if the interface allows direct selection).
+3. Click the **Edit** icon (usually a pencil) or double-click the row — this will open the promotion in the Editor tab.
+4. Alternatively, select the row and then click the **Editor** tab at the top of the interface.
+
+The **Edit Single Promotion** or **EDITOR** screen will open, showing all the current values of the promotion (very similar to the creation form).
+You can modify any field you need:
+
+- **Title, Description, Category**
+- **Deal Type, Price, Quantity Required, Limit**, etc.
+- **Dates** (Starts on / Expires)
+- **Media** (change image, background, icons)
+- **Size, Width, Height**
+- **Headline, Coupon settings, Background color/image**, etc.
+
+As soon as you finish making changes, the platform automatically saves the modifications in most cases.
+You may see a notification such as "You have made 1 change to your selected cards".
+In some views, you might need to click **Update** or **Save** to confirm.
+
+The **preview panel** on the right updates in real time so you can verify how the changes look.
+
+> **Tip**: Use the **← Previous** and **Next →** buttons to quickly navigate and edit several promotions one after another without returning to the main table.
+
+### 2. Bulk Editing (Editing Multiple Promotions at Once)
+
+Bulk editing is very useful when you need to apply the same change to many promotions simultaneously — for example:
+
+- Change the category for a group of items
+- Update the date range for an entire campaign
+- Modify the deal type, size, background color, or any other common field across multiple cards
+
+**Steps:**
+
+1. In the main Circular Builder table, select two or more promotions:
+    - Click the checkbox at the beginning of each row you want to edit.
+    - Or use **Shift + click** or **Ctrl + click** to select multiple rows quickly.
+
+2. Once at least two items are selected, the system activates bulk editing mode.
+    - You will usually see a notification or the Editor tab becomes available for bulk.
+
+3. Click the **Editor** tab (now labeled something like **Edit Multiple Promotions**).
+
+4. The **Edit Multiple Promotions** screen opens:
+    - The form looks similar to the single edit form, but changes made here will apply to **all selected promotions**.
+    - Fields that currently have different values across the selected items may appear blank, with a "-" symbol, or highlighted in yellow.
+
+5. **Modify only the fields you want to update** for all selected promotions.
+    - Examples:
+        - Change **Category** → select a new one from the list
+        - Update **Date range** → set new Starts on / Expires dates
+        - Change **Deal Type, Size, Background Color**, etc.
+
+6. Leave fields blank if you do not want to change them (only modified fields will be applied).
+
+7. After making the desired changes, click the **Update [X] Cards** button (e.g., "Update 4 Cards").
+
+8. The system applies the changes to all selected promotions.
+    - A confirmation message appears (e.g., "You have made X changes to your selected cards").
+    - The updates are saved immediately.
+
+9. Return to the main table to verify that all selected promotions now reflect the new values.
+
+**Important Notes on Bulk Editing:**
+
+- **Only changed fields are applied**. If you leave a field empty or unchanged, it will keep its original value for each promotion.
+- **Mixed values warning**: When selected promotions have different values in a field, the field may show "-" or be highlighted. Be careful — updating it will overwrite all variations with the new value.
+- **No individual preview per card in bulk mode** — the preview shows a representative example.
+- Use bulk edit for **consistency changes** (category, dates, style, etc.). For very specific or unique edits, use single-item editing.
+
+**Best Practice:**
+Always review a few items in the main table after a bulk edit to confirm the changes were applied correctly.
+
 ## Tips and Best Practices
 
 - **Field Validation**: If a required field is missing (such as Category), the system will display an error. Double-check the prerequisites.

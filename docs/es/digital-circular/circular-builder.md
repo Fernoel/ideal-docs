@@ -196,6 +196,91 @@ A continuación se muestra la estructura típica de la plantilla (los nombres ex
 
 > **Consejo**: Si tienes dudas sobre valores específicos de columnas u opciones permitidas (por ejemplo, la lista completa de Tipos de Oferta o Estilos de Tarjeta), pregunta a tu administrador o verifica dentro de la plataforma creando una sola promoción primero para ver las opciones desplegables.
 
+## Editando Contenido en Circular Builder
+
+Una vez que el contenido (promociones/tarjetas) ha sido creado y aparece en la tabla principal (data-grid) del módulo Circular Builder, puedes editarlo en cualquier momento — ya sea individualmente o de forma masiva.
+
+Existen dos formas principales de editar contenido:
+
+1. **Edición Individual** (una promoción a la vez)
+2. **Edición Masiva** (múltiples promociones a la vez)
+
+### 1. Editando una Sola Promoción
+
+**Pasos:**
+
+1. En la pantalla principal de Circular Builder, localiza la promoción que deseas editar en la tabla.
+2. Selecciona la fila deseada haciendo clic en la casilla de verificación al principio de la fila (o simplemente haz clic en la fila si la interfaz permite la selección directa).
+3. Haz clic en el icono **Edit** (usualmente un lápiz) o haz doble clic en la fila — esto abrirá la promoción en la pestaña Editor.
+4. Alternativamente, selecciona la fila y luego haz clic en la pestaña **Editor** en la parte superior de la interfaz.
+
+La pantalla **Edit Single Promotion** o **EDITOR** se abrirá, mostrando todos los valores actuales de la promoción (muy similar al formulario de creación).
+Puedes modificar cualquier campo que necesites:
+
+- **Título, Descripción, Categoría**
+- **Tipo de Oferta, Precio, Cantidad Requerida, Límite**, etc.
+- **Fechas** (Inicio / Vencimiento)
+- **Medios** (cambiar imagen, fondo, iconos)
+- **Tamaño, Ancho, Alto**
+- **Encabezado, configuración de Cupón, color/imagen de Fondo**, etc.
+
+Tan pronto como termines de hacer cambios, la plataforma guarda automáticamente las modificaciones en la mayoría de los casos.
+Puedes ver una notificación como "You have made 1 change to your selected cards" (Has realizado 1 cambio en tus tarjetas seleccionadas).
+En algunas vistas, es posible que necesites hacer clic en **Update** o **Save** para confirmar.
+
+El **panel de vista previa** a la derecha se actualiza en tiempo real para que puedas verificar cómo se ven los cambios.
+
+> **Consejo**: Usa los botones **← Previous** y **Next →** para navegar y editar rápidamente varias promociones una tras otra sin volver a la tabla principal.
+
+### 2. Edición Masiva (Editando Múltiples Promociones a la Vez)
+
+La edición masiva es muy útil cuando necesitas aplicar el mismo cambio a muchas promociones simultáneamente — por ejemplo:
+
+- Cambiar la categoría para un grupo de artículos
+- Actualizar el rango de fechas para una campaña completa
+- Modificar el tipo de oferta, tamaño, color de fondo o cualquier otro campo común en múltiples tarjetas
+
+**Pasos:**
+
+1. En la tabla principal de Circular Builder, selecciona dos o más promociones:
+    - Haz clic en la casilla de verificación al principio de cada fila que desees editar.
+    - O usa **Shift + clic** o **Ctrl + clic** para seleccionar múltiples filas rápidamente.
+
+2. Una vez que al menos dos elementos están seleccionados, el sistema activa el modo de edición masiva.
+    - Usualmente verás una notificación o la pestaña Editor se volverá disponible para edición masiva.
+
+3. Haz clic en la pestaña **Editor** (ahora etiquetada algo como **Edit Multiple Promotions**).
+
+4. La pantalla **Edit Multiple Promotions** se abre:
+    - El formulario se ve similar al formulario de edición individual, pero los cambios realizados aquí se aplicarán a **todas las promociones seleccionadas**.
+    - Los campos que actualmente tienen valores diferentes entre los elementos seleccionados pueden aparecer en blanco, con un símbolo "-", o resaltados en amarillo.
+
+5. **Modifica solo los campos que deseas actualizar** para todas las promociones seleccionadas.
+    - Ejemplos:
+        - Cambiar **Categoría** → selecciona una nueva de la lista
+        - Actualizar **Rango de Fechas** → establece nuevas fechas de Inicio / Vencimiento
+        - Cambiar **Tipo de Oferta, Tamaño, Color de Fondo**, etc.
+
+6. Deja los campos en blanco si no deseas cambiarlos (solo los campos modificados serán aplicados).
+
+7. Después de hacer los cambios deseados, haz clic en el botón **Update [X] Cards** (por ejemplo, "Update 4 Cards").
+
+8. El sistema aplica los cambios a todas las promociones seleccionadas.
+    - Aparece un mensaje de confirmación (por ejemplo, "You have made X changes to your selected cards").
+    - Las actualizaciones se guardan inmediatamente.
+
+9. Regresa a la tabla principal para verificar que todas las promociones seleccionadas ahora reflejen los nuevos valores.
+
+**Notas Importantes sobre Edición Masiva:**
+
+- **Solo se aplican los campos cambiados**. Si dejas un campo vacío o sin cambios, mantendrá su valor original para cada promoción.
+- **Advertencia de valores mixtos**: Cuando las promociones seleccionadas tienen valores diferentes en un campo, el campo puede mostrar "-" o estar resaltado. Ten cuidado — actualizarlo sobrescribirá todas las variaciones con el nuevo valor.
+- **Sin vista previa individual por tarjeta en modo masivo** — la vista previa muestra un ejemplo representativo.
+- Usa la edición masiva para **cambios de consistencia** (categoría, fechas, estilo, etc.). Para ediciones muy específicas o únicas, usa la edición individual.
+
+**Mejor Práctica:**
+Siempre revisa algunos elementos en la tabla principal después de una edición masiva para confirmar que los cambios se aplicaron correctamente.
+
 ## Consejos y Mejores Prácticas
 
 - **Validación de Campos**: Si falta un campo requerido (como Categoría), el sistema mostrará un error. Verifica nuevamente los prerrequisitos.
