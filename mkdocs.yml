@@ -63,6 +63,7 @@ nav:
       - Setup: developer/setup.md
       - Architecture: developer/architecture.md
       - API Reference: developer/api-reference.md
+  - Blog: blog/index.md
 
 extra:
   alternate:

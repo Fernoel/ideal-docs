@@ -66,7 +66,7 @@ nav:
       - Configuración: developer/setup.md
       - Arquitectura: developer/architecture.md
       - Referencia API: developer/api-reference.md
-  # Blog is generated automatically
+  - Blog: blog/index.md
 
 extra:
   alternate:
