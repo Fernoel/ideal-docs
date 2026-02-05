@@ -1,0 +1,81 @@
+site_name: Ideal Documentation
+site_url: https://Fernoel.github.io/ideal-docs/es/
+repo_url: https://github.com/Fernoel/ideal-docs
+repo_name: ideal-docs
+
+docs_dir: docs/es
+site_dir: site/es
+
+theme:
+  name: material
+  language: es
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  palette:
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+
+nav:
+  - Inicio: index.md
+  - Circular Digital:
+      - Constructor de Circulares: digital-circular/circular-builder.md
+      - Biblioteca de Recursos: digital-circular/asset-library.md
+      - Estilos de Tarjeta: digital-circular/card-styles.md
+      - Categorías: digital-circular/categories.md
+      - Íconos y Titulares: digital-circular/icons-headlines.md
+      - Contenido Importado: digital-circular/imported-content.md
+      - Páginas: digital-circular/pages.md
+      - Recetas: digital-circular/recipes.md
+      - Horarios: digital-circular/schedules.md
+      - Grupos de Tiendas: digital-circular/store-groups.md
+  - Medios Minoristas:
+      - Biblioteca de Recursos: retail-media/asset-library.md
+      - Constructor de Campañas: retail-media/campaign-builder.md
+      - Envíos de Formularios: retail-media/form-submissions.md
+  - Base de Datos de Promociones:
+      - Gestor de Versiones: promotion-database/version-manager.md
+  - Analítica:
+      - Panel de Control: analytics/dashboard.md
+  - Administración de Marca:
+      - Marcas CPG: brand-admin/cpg-brands.md
+      - Marcas Minoristas: brand-admin/retail-brands.md
+      - Gestión de Usuarios: brand-admin/user-management.md
+  - Desarrollador:
+      - Configuración: developer/setup.md
+      - Arquitectura: developer/architecture.md
+      - Referencia API: developer/api-reference.md
+  # Blog is generated automatically
+
+extra:
+  alternate:
+    - name: English
+      link: /ideal-docs/
+      lang: en
+    - name: Español
+      link: /ideal-docs/es/
+      lang: es
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://designhouse.design/

@@ -9,7 +9,7 @@ El módulo Circular Builder es el núcleo para crear contenido para volantes dig
 - Una tabla (data-grid) que lista los elementos de contenido existentes, con columnas como DÍAS (días de validez), TIPO DE OFERTA (deal type), PROPIETARIO (owner), TAMAÑO (size) y opciones de ver/editar.
 - Un panel de vista previa a la derecha que muestra tarjetas de promoción con imágenes, precios y descuentos.
 
-![Interfaz principal de Circular Builder](../../assets/screenshots/content%20(1).png)
+![Interfaz principal de Circular Builder]](../assets/screenshots/content%20(1).png)
 > *Interfaz principal de Circular Builder con tabla de contenido y vista previa.*
 
 ## Prerrequisitos para Crear Contenido
@@ -46,7 +46,7 @@ Completa todos los campos requeridos (marcados con *). Los campos clave incluyen
 
 > Asegúrate de que todos los campos obligatorios estén completos; de lo contrario, no podrás guardar.
 
-![Formulario de creación](../../assets/screenshots/content.png)
+![Formulario de creación](../assets/screenshots/content.png)
 > *Formulario de creación "Create Single Promotion" con secciones y vista previa.*
 
 ### 4. Guardar el Contenido

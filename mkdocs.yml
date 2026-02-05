@@ -5,6 +5,7 @@ repo_name: ideal-docs
 
 theme:
   name: material
+  language: en
   logo: assets/logo.png
   favicon: assets/favicon.ico
   palette:
@@ -32,53 +33,45 @@ plugins:
   - search
   - blog:
       blog_dir: blog
-      post_dir: blog/posts
-
-  - i18n:
-      docs_structure: folder
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: es
-          name: Español
-          build: true
 
 nav:
   - Home: index.md
   - Digital Circular:
       - Circular Builder: digital-circular/circular-builder.md
+      - Asset Library: digital-circular/asset-library.md
+      - Card Styles: digital-circular/card-styles.md
       - Categories: digital-circular/categories.md
+      - Icons & Headlines: digital-circular/icons-headlines.md
+      - Imported Content: digital-circular/imported-content.md
       - Pages: digital-circular/pages.md
       - Recipes: digital-circular/recipes.md
       - Schedules: digital-circular/schedules.md
-      - Asset Library: digital-circular/asset-library.md
-      - Imported Content: digital-circular/imported-content.md
-      - Icons / Headlines: digital-circular/icons-headlines.md
-      - Card Styles: digital-circular/card-styles.md
       - Store Groups: digital-circular/store-groups.md
-  - Dashboard: dashboard.md
-  - Analytics:
-      - Dashboard: analytics/dashboard.md
-  - Promotion Database:
-      - Version Manager: promotion-database/version-manager.md
   - Retail Media:
       - Asset Library: retail-media/asset-library.md
-      - Form Submissions: retail-media/form-submissions.md
       - Campaign Builder: retail-media/campaign-builder.md
+      - Form Submissions: retail-media/form-submissions.md
+  - Promotion Database:
+      - Version Manager: promotion-database/version-manager.md
+  - Analytics:
+      - Dashboard: analytics/dashboard.md
   - Brand Admin:
-      - User Management: brand-admin/user-management.md
-      - Retail Brands (Stores): brand-admin/retail-brands.md
       - CPG Brands: brand-admin/cpg-brands.md
-  - Support Portal: support-portal.md
-  - Developer Manual:
-      - Architecture: developer/architecture.md
+      - Retail Brands: brand-admin/retail-brands.md
+      - User Management: brand-admin/user-management.md
+  - Developer:
       - Setup: developer/setup.md
+      - Architecture: developer/architecture.md
       - API Reference: developer/api-reference.md
-  - Blog: blog/index.md
 
 extra:
+  alternate:
+    - name: English
+      link: /ideal-docs/
+      lang: en
+    - name: Español
+      link: /ideal-docs/es/
+      lang: es
   social:
     - icon: fontawesome/solid/globe
       link: https://designhouse.design/

@@ -33,6 +33,9 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - run: pip install -r requirements.txt
-
-      - run: mkdocs gh-deploy --force
+      - name: Build and Publish
+        run: |
+          pip install mkdocs-material mkdocs-blog-plugin mkdocs-git-revision-date-localized-plugin mkdocs-minify-plugin ghp-import
+          mkdocs build -f mkdocs.yml
+          mkdocs build -f mkdocs.es.yml
+          ghp-import -n -p -f site

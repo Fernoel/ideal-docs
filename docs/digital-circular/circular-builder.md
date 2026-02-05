@@ -9,7 +9,7 @@ The Circular Builder module is the core for creating content for digital circula
 - A table (data-grid) listing existing content items, with columns such as DAYS (validity days), DEAL TYPE (offer type), OWNER (owner), SIZE (size), and view/edit options.
 - A right-side preview panel displaying promotion cards with images, prices, and discounts.
 
-![Main Circular Builder interface](../../assets/screenshots/content%20(1).png)
+![Main Circular Builder interface]](../assets/screenshots/content%20(1).png)
 > *Main Circular Builder interface with content table and preview.*
 
 ## Prerequisites for Creating Content
@@ -46,7 +46,7 @@ Fill in all required fields (marked with *). Key fields include:
 
 > Ensure all mandatory fields are completed; otherwise, you will not be able to save.
 
-![Create Single Promotion form](../../assets/screenshots/content.png)
+![Create Single Promotion form](../assets/screenshots/content.png)
 > *"Create Single Promotion" creation form with sections and preview.*
 
 ### 4. Save the Content
