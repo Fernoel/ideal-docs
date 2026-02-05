@@ -1,0 +1,2674 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Fernoel.github.io/ideal-docs/digital-circular/circular-builder/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../asset-library/">
+      
+      
+        
+          <link rel="alternate" href="/ideal-docs/" hreflang="en">
+        
+          <link rel="alternate" href="/ideal-docs/es/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Circular Builder - Ideal Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#circular-builder-module" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Ideal Documentation" class="md-header__button md-logo" aria-label="Ideal Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ideal Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Circular Builder
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/ideal-docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ideal-docs/es/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Fernoel/ideal-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ideal-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Digital Circular
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../retail-media/asset-library/" class="md-tabs__link">
+          
+  
+  
+  Retail Media
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../promotion-database/version-manager/" class="md-tabs__link">
+          
+  
+  
+  Promotion Database
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../analytics/dashboard/" class="md-tabs__link">
+          
+  
+  
+  Analytics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../brand-admin/cpg-brands/" class="md-tabs__link">
+          
+  
+  
+  Brand Admin
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer/setup/" class="md-tabs__link">
+          
+  
+  
+  Developer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../blog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Ideal Documentation" class="md-nav__button md-logo" aria-label="Ideal Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Ideal Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Fernoel/ideal-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ideal-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Circular
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Digital Circular
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Circular Builder
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Circular Builder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites-for-creating-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites for Creating Content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-workflow-to-create-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Workflow to Create Content
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Workflow to Create Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-access-the-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Access the Module
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-start-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Start Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-complete-the-creation-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Complete the Creation Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-save-the-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Save the Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-content-using-content-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Create Content Using Content Bulk Upload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Create Content Using Content Bulk Upload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-workflow-for-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Workflow for Bulk Upload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Workflow for Bulk Upload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#access-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Bulk Upload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-upload-your-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 – Upload Your Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-select-your-date-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 – Select Your Date Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-content-upload-category-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 – Content Upload &amp; Category Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-review-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 – Review / Preview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-finalize-and-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 – Finalize and Save
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-successful-bulk-uploads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Successful Bulk Uploads
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-content-bulk-upload-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding the Content Bulk Upload Template
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Content Bulk Upload Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-to-get-the-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to Get the Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-columns-in-the-bulk-upload-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Columns in the Bulk Upload Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-rules-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Rules and Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-workflow-to-prepare-a-bulk-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Workflow to Prepare a Bulk File
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-content-in-circular-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Content in Circular Builder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing Content in Circular Builder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-editing-a-single-promotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Editing a Single Promotion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-bulk-editing-editing-multiple-promotions-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Bulk Editing (Editing Multiple Promotions at Once)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips and Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asset-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asset Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../card-styles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Card Styles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../icons-headlines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icons & Headlines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imported-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imported Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recipes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recipes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../store-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Store Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retail Media
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Retail Media
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../retail-media/asset-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asset Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../retail-media/campaign-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campaign Builder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../retail-media/form-submissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Form Submissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Promotion Database
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Promotion Database
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../promotion-database/version-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Version Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analytics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Analytics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analytics/dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brand Admin
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Brand Admin
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brand-admin/cpg-brands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CPG Brands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brand-admin/retail-brands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retail Brands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brand-admin/user-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites-for-creating-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites for Creating Content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-workflow-to-create-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Workflow to Create Content
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Workflow to Create Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-access-the-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Access the Module
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-start-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Start Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-complete-the-creation-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Complete the Creation Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-save-the-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Save the Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-content-using-content-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Create Content Using Content Bulk Upload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Create Content Using Content Bulk Upload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-workflow-for-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Workflow for Bulk Upload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Workflow for Bulk Upload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#access-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Bulk Upload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-upload-your-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 – Upload Your Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-select-your-date-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 – Select Your Date Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-content-upload-category-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 – Content Upload &amp; Category Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-review-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 – Review / Preview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-finalize-and-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 – Finalize and Save
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-successful-bulk-uploads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Successful Bulk Uploads
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-content-bulk-upload-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding the Content Bulk Upload Template
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Content Bulk Upload Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-to-get-the-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to Get the Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-columns-in-the-bulk-upload-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Columns in the Bulk Upload Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-rules-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Rules and Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-workflow-to-prepare-a-bulk-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Workflow to Prepare a Bulk File
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-content-in-circular-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Content in Circular Builder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing Content in Circular Builder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-editing-a-single-promotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Editing a Single Promotion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-bulk-editing-editing-multiple-promotions-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Bulk Editing (Editing Multiple Promotions at Once)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips and Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="circular-builder-module">Circular Builder Module</h1>
+<h2 id="general-description">General Description</h2>
+<p>The Circular Builder module is the core for creating content for digital circulars. Here you can generate promotions, offers, and visual elements that are integrated into circulars. The main interface includes:</p>
+<ul>
+<li>A left sidebar menu with options such as Dashboard, Digital Circular, Circular Builder, Categories, etc.</li>
+<li>A store or brand selector (e.g., "Fernando First Store").</li>
+<li>A calendar to select publication dates.</li>
+<li>A table (data-grid) listing existing content items, with columns such as DAYS (validity days), DEAL TYPE (offer type), OWNER (owner), SIZE (size), and view/edit options.</li>
+<li>A right-side preview panel displaying promotion cards with images, prices, and discounts.</li>
+</ul>
+<p>![Main Circular Builder interface]](../assets/screenshots/content%20(1).png)</p>
+<blockquote>
+<p><em>Main Circular Builder interface with content table and preview.</em></p>
+</blockquote>
+<h2 id="prerequisites-for-creating-content">Prerequisites for Creating Content</h2>
+<p>Before creating new content, ensure the following prerequisites are met:</p>
+<ol>
+<li><strong>Node Creation</strong>: You must have already created at least one node, which can be a Brand, Sub-Brand, or Store. This defines the context in which the content will be applied.</li>
+<li><strong>Category Creation</strong>: It is mandatory to have at least one category created in the Categories module. Without an assigned category, you will not be able to complete content creation, as it is a required field.</li>
+</ol>
+<p>!!! warning "Requirement"
+    If these prerequisites are not met, the system will not allow you to save the new content. Go to the corresponding modules (e.g., Retail Brands or Categories) to set them up first.</p>
+<h2 id="basic-workflow-to-create-content">Basic Workflow to Create Content</h2>
+<p>Follow these steps to create a new content item in Circular Builder:</p>
+<h3 id="1-access-the-module">1. Access the Module</h3>
+<ul>
+<li>Log in to the platform as an administrator.</li>
+<li>In the left sidebar menu, select <strong>Digital Circular &gt; Circular Builder</strong>.</li>
+<li>Choose the desired store or brand in the top selector (e.g., "Biswa First Store").</li>
+</ul>
+<h3 id="2-start-creation">2. Start Creation</h3>
+<ul>
+<li>In the main interface, click the <strong>New Card</strong> button (or "New Content", depending on the version).</li>
+<li>This will open a new tab or creation form titled "Create Single Promotion" or similar.</li>
+</ul>
+<h3 id="3-complete-the-creation-form">3. Complete the Creation Form</h3>
+<p>The form is divided into sections such as Content, Deal/Offer, Date Range, Media, Header, Background, etc.
+Fill in all required fields (marked with *). Key fields include:</p>
+<ul>
+<li><strong>Content</strong>: Title, Description, Date Text (Display), Category (select an existing one), Width, Height, and Size (e.g., Small).</li>
+<li><strong>Deal/Offer</strong>: Card Style (e.g., Coupon), Deal Type (e.g., Static (No Price), Fixed Price, Buy X Get Y For Z), Quantity Required, Limit, UPC (product code).</li>
+<li><strong>Coupon</strong>: If applicable, manually include a coupon with Coupon ID, Required, Limit, and Amount Off.</li>
+<li><strong>Date Range</strong>: Starts on and Expires dates.</li>
+<li><strong>Media</strong>: Upload or select media (images, icons), header (Headline), background (Background Color or Image), position (Position - e.g., Center).</li>
+<li><strong>Preview</strong>: Use the right-side preview panel to see how the promotion will look in real time.</li>
+</ul>
+<blockquote>
+<p>Ensure all mandatory fields are completed; otherwise, you will not be able to save.</p>
+</blockquote>
+<p><img alt="Create Single Promotion form" src="../../assets/screenshots/content.png" /></p>
+<blockquote>
+<p><em>"Create Single Promotion" creation form with sections and preview.</em></p>
+</blockquote>
+<h3 id="4-save-the-content">4. Save the Content</h3>
+<ul>
+<li>Once all fields are completed, click <strong>Save</strong> or <strong>Create</strong> (the button may vary depending on the interface).</li>
+<li>The new content will automatically appear in the main table (data-grid) of the Circular Builder module.</li>
+<li>You can edit, delete, or preview the content from the table using the corresponding icons (e.g., eye icon to view, scissors to edit).</li>
+</ul>
+<h2 id="how-to-create-content-using-content-bulk-upload">How to Create Content Using Content Bulk Upload</h2>
+<p>The Content Bulk Upload feature allows you to create multiple content items at once by uploading a properly formatted bulk file (typically a spreadsheet or structured file containing promotion data) along with associated media files. This is especially useful when you need to create dozens or hundreds of promotions in a single operation.</p>
+<p>!!! important "Important Prerequisite"
+    Before using Bulk Upload, you must prepare and have ready a valid Content Bulk Upload file. This file must follow the exact format and structure expected by the platform (columns, required fields, naming conventions, etc.). Contact your administrator or refer to the Bulk Upload Template Documentation (if available) to obtain the correct template and instructions.</p>
+<h3 id="step-by-step-workflow-for-bulk-upload">Step-by-Step Workflow for Bulk Upload</h3>
+<h4 id="access-bulk-upload">Access Bulk Upload</h4>
+<ol>
+<li>Go to the Circular Builder module.</li>
+<li>Select the desired store/brand using the top selector (e.g., "Fernando First Store").</li>
+<li>In the main interface, click the <strong>Bulk Upload</strong> button (usually located near the "New Card" button).</li>
+<li>This action opens the multi-step Manage Content wizard titled something like "Manage Content for [Store Name]".</li>
+</ol>
+<h4 id="step-1-upload-your-media">Step 1 – Upload Your Media</h4>
+<ul>
+<li>You will see a drag-and-drop area labeled "Drop your media files here" and a <strong>+ Choose</strong> button.</li>
+<li><strong>Important</strong>: The system only accepts image and video file formats. Other file types will be rejected.</li>
+<li>Drag and drop your media files or click <strong>+ Choose</strong> to select them from your computer.</li>
+<li>Wait until all files finish uploading completely.<ul>
+<li>A progress indicator or status column will show when each file has been successfully processed.</li>
+<li>Only when all uploads are complete will the <strong>Next</strong> button become active.</li>
+</ul>
+</li>
+<li>Click <strong>Next</strong> to proceed.</li>
+</ul>
+<h4 id="step-2-select-your-date-range">Step 2 – Select Your Date Range</h4>
+<ul>
+<li>In this step, you can define a common date range that will apply to all (or most) of the content items being uploaded.</li>
+<li>Use the calendar controls to set <strong>Starts on</strong> and <strong>Expires</strong> dates.</li>
+<li>If you do not need a specific date range for this bulk operation (or if dates are already defined in the bulk file), simply click <strong>Next</strong> to skip this step.</li>
+</ul>
+<h4 id="step-3-content-upload-category-management">Step 3 – Content Upload &amp; Category Management</h4>
+<p>The system processes the uploaded bulk file and attempts to match or create categories.</p>
+<p><strong>Behavior depending on categories:</strong>
+- <strong>If the categories already exist in the current node (brand/store)</strong>: A success message will appear indicating that the categories were found or successfully matched.
+- <strong>If the categories are new for this node</strong>: You will see two main options for each new category:
+    - <strong>Create</strong>: Click the Create button to automatically generate the new category in the system.
+    - <strong>Map</strong>: Select an existing category from the dropdown list and map the new category name to an already existing one.
+- <strong>Ignore option</strong>: Check the Ignore checkbox for individual categories or use a "Select All / Ignore All" option if available. Ignored categories will not be created or mapped.</p>
+<p>After handling all categories (creating, mapping, or ignoring), click <strong>Next</strong>.</p>
+<p>!!! warning "Important Note about Ignoring Categories"
+    - If you ignore one or more categories, the system will allow you to proceed.
+    - However, in the preview step (Step 5), any content item without an assigned category will be marked with an error.
+    - <strong>To fix these errors</strong>:
+        1. Click the edit icon on the affected content item, or
+        2. Click the error message/notification to open the category assignment tool.
+        3. Assign a valid category and save.</p>
+<h4 id="step-4-review-preview">Step 4 – Review / Preview</h4>
+<p>This step shows a complete preview of all content items that will be created from the bulk file.
+Review the table carefully:
+- Check titles, deal types, sizes, media assignments, dates, categories, etc.
+- Look for any error indicators (especially missing categories).</p>
+<blockquote>
+<p>Fix any issues directly in this view if the interface allows inline editing, or go back to previous steps.</p>
+</blockquote>
+<h4 id="step-5-finalize-and-save">Step 5 – Finalize and Save</h4>
+<p>You will see a final table listing all the content items that will be created.
+In this table you can:
+- <strong>Delete</strong> individual items (if you do not want to create them)
+- <strong>Edit</strong> individual items (modify title, deal type, category, media, etc.)</p>
+<p>When everything looks correct and there are no remaining errors, click the <strong>Done</strong> button.
+The system will start processing and saving all the content items.
+Once completed, you will be redirected back to the main Circular Builder table, where the newly created content items will appear.</p>
+<h3 id="tips-for-successful-bulk-uploads">Tips for Successful Bulk Uploads</h3>
+<ul>
+<li><strong>Always use the official template</strong> provided by the platform to avoid format errors.</li>
+<li><strong>Upload all related media files</strong> before or together with the bulk file processing.</li>
+<li><strong>Be patient during media upload</strong> — do not close the window or navigate away until all files show 100% complete.</li>
+<li><strong>Resolve category issues</strong> before the final save to avoid having to edit many items individually later.</li>
+<li><strong>After a successful bulk upload</strong>, use the Export button in the main table to download and verify the newly created content.</li>
+</ul>
+<h2 id="understanding-the-content-bulk-upload-template">Understanding the Content Bulk Upload Template</h2>
+<p>The Content Bulk Upload feature relies on a structured file (usually a <code>.xlsx</code>, <code>.xls</code> or <code>.csv</code>) that contains all the information needed to create multiple promotion cards at once. This template defines exactly which columns are expected, which are required, and what kind of data should go in each one.</p>
+<h3 id="where-to-get-the-template">Where to Get the Template</h3>
+<ul>
+<li><strong>The most reliable way</strong> is to ask your platform administrator or the support team for the official Bulk Upload Template.</li>
+<li>In some versions of the platform, there may be a <strong>Download Template</strong> button or link inside the Bulk Upload wizard (usually visible after clicking "Bulk Upload").</li>
+<li>If no template is available, contact support through the Support Portal module to request the current version.</li>
+</ul>
+<p>!!! important
+    Using a file that does not match the expected structure will cause errors during upload. Always use the official or most recent template.</p>
+<h3 id="main-columns-in-the-bulk-upload-template">Main Columns in the Bulk Upload Template</h3>
+<p>Below is the typical structure of the template (the exact column names and order may vary slightly depending on the platform version — always verify with your current template).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: center;">Required?</th>
+<th style="text-align: left;">Description / Expected Format</th>
+<th style="text-align: left;">Example Values</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Title</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">The main title of the promotion card (in English or the selected language)</td>
+<td style="text-align: left;"><code>"2x1 en Pastas"</code></td>
+<td style="text-align: left;">Keep it short and attractive</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Longer description or details of the offer</td>
+<td style="text-align: left;"><code>"Lleva 2 paquetes y paga solo 1"</code></td>
+<td style="text-align: left;">Can include line breaks if the system supports it</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Deal Type</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">The type of offer / promotion</td>
+<td style="text-align: left;"><code>Fixed Price</code>, <code>Buy X Get Y For Z</code>, <code>Amount Off</code>, <code>Static (No Price)</code>, <code>Coupon</code>, <code># for Price</code></td>
+<td style="text-align: left;">Must match one of the allowed values exactly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Card Style</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Visual style of the card</td>
+<td style="text-align: left;"><code>Coupon</code>, <code>Banner</code>, <code>Standard</code>, <code>Menu Item</code></td>
+<td style="text-align: left;">Affects layout and available fields</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Size</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Grid size of the card in the circular</td>
+<td style="text-align: left;"><code>1x1</code>, <code>1x2</code>, <code>2x1</code>, <code>2x2</code>, <code>3x1</code>, etc.</td>
+<td style="text-align: left;">Common values: 1×1, 1×2, 2×2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Width</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Width value (numeric)</td>
+<td style="text-align: left;"><code>1</code>, <code>2</code>, <code>3</code></td>
+<td style="text-align: left;">Usually matches the first number in Size</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Height</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Height value (numeric)</td>
+<td style="text-align: left;"><code>1</code>, <code>2</code></td>
+<td style="text-align: left;">Usually matches the second number in Size</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Name of the category where this promotion belongs</td>
+<td style="text-align: left;"><code>"Bebidas"</code>, <code>"Lácteos"</code>, <code>"Frutas y Verduras"</code></td>
+<td style="text-align: left;">Must exist or will be created/mapped in step 3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Starts On</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Start date of the promotion</td>
+<td style="text-align: left;"><code>2026-02-08 00:00</code></td>
+<td style="text-align: left;">Format: YYYY-MM-DD HH:MM or just YYYY-MM-DD</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expires</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">End date of the promotion</td>
+<td style="text-align: left;"><code>2026-02-14 23:59</code></td>
+<td style="text-align: left;">If empty, may use a default or global date range</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Coupon ID</strong></td>
+<td style="text-align: center;">Conditional</td>
+<td style="text-align: left;">Unique identifier for the coupon (only if Deal Type = Coupon)</td>
+<td style="text-align: left;"><code>CUPON2026-XYZ123</code></td>
+<td style="text-align: left;">Required only for coupon-style promotions</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Amount Off</strong></td>
+<td style="text-align: center;">Conditional</td>
+<td style="text-align: left;">Discount amount (currency or percentage)</td>
+<td style="text-align: left;"><code>5.99</code>, <code>30%</code>, <code>$4.00 OFF</code></td>
+<td style="text-align: left;">Depends on Deal Type</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Quantity Required</strong></td>
+<td style="text-align: center;">Conditional</td>
+<td style="text-align: left;">Number of items needed to activate the offer</td>
+<td style="text-align: left;"><code>2</code></td>
+<td style="text-align: left;">Used in "Buy X Get Y" type offers</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Limit</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Maximum uses per customer or total limit</td>
+<td style="text-align: left;"><code>1</code>, <code>4</code>, <code>Unlimited</code></td>
+<td style="text-align: left;">"Unlimited" or leave blank if no limit</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>UPC / SKU</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Product code(s) – can be one or multiple (comma-separated)</td>
+<td style="text-align: left;"><code>7501234567890</code>, <code>7509876543210</code></td>
+<td style="text-align: left;">Used for product-specific promotions</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Media Filename 1</strong></td>
+<td style="text-align: center;">Conditional</td>
+<td style="text-align: left;">Name of the main image file (must be uploaded in Step 1)</td>
+<td style="text-align: left;"><code>promo_bebidas_2x1.jpg</code></td>
+<td style="text-align: left;">Exact filename including extension</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Media Filename 2</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Secondary image or icon</td>
+<td style="text-align: left;"><code>icon_descuento.png</code></td>
+<td style="text-align: left;">Optional – depends on card style</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Headline</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Short highlighted text (often appears in bold)</td>
+<td style="text-align: left;"><code>"¡Oferta Exclusiva!"</code></td>
+<td style="text-align: left;">Optional but recommended</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Background Color</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Hex color code for background</td>
+<td style="text-align: left;"><code>#FF0000</code>, <code>#FFFFFF</code></td>
+<td style="text-align: left;">Only if no background image is used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Language</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Language code of this row</td>
+<td style="text-align: left;"><code>EN</code>, <code>ES</code></td>
+<td style="text-align: left;">Usually EN or ES – defaults to platform language if empty</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-rules-and-best-practices">Key Rules and Best Practices</h3>
+<ul>
+<li><strong>Required fields</strong> must be filled in every row. Missing required values will cause the entire row (or the whole upload) to fail.</li>
+<li><strong>Exact match for controlled fields</strong>: Deal Type, Card Style, Size, etc. must match the values the system recognizes (case-sensitive in most cases).</li>
+<li><strong>Dates</strong>: Use consistent format (preferably YYYY-MM-DD). If you leave them blank, the dates defined in Step 2 (or a default range) may be applied.</li>
+<li><strong>Media files</strong>: The filenames in the spreadsheet must exactly match the names of the files you upload in Step 1 (including extension: <code>.jpg</code>, <code>.png</code>, <code>.mp4</code>, etc.).</li>
+<li><strong>One row = one promotion card</strong>. Each row in the spreadsheet creates one individual content/promotion card.</li>
+<li><strong>Categories</strong>: If the category name does not exist in the current brand/store, you will be prompted to create or map it in Step 3.</li>
+<li><strong>Validation</strong>: The system performs validation during processing. Common errors include:<ul>
+<li>Missing required columns</li>
+<li>Invalid Deal Type or Size values</li>
+<li>Media filename not found among uploaded files</li>
+<li>Category not resolved (not created/mapped/ignored)</li>
+</ul>
+</li>
+</ul>
+<h3 id="recommended-workflow-to-prepare-a-bulk-file">Recommended Workflow to Prepare a Bulk File</h3>
+<ol>
+<li><strong>Download the official template</strong>.</li>
+<li><strong>Fill in your promotions row by row</strong> (one promotion = one row).</li>
+<li><strong>Prepare all the images/videos</strong> referenced in the "Media Filename" columns.</li>
+<li><strong>Save the file</strong> (preferably <code>.xlsx</code>).</li>
+<li><strong>Go to Circular Builder</strong> → click <strong>Bulk Upload</strong>.</li>
+<li><strong>Upload your media files first</strong> (Step 1).</li>
+<li><strong>Proceed through the wizard</strong>, mapping categories as needed.</li>
+<li><strong>Review everything carefully</strong> in the preview step.</li>
+<li><strong>Click Done</strong> when ready.</li>
+</ol>
+<blockquote>
+<p><strong>Tip</strong>: If you have any doubts about specific column values or allowed options (for example, the complete list of Deal Types or Card Styles), ask your administrator or check inside the platform by creating a single promotion first to see the dropdown options.</p>
+</blockquote>
+<h2 id="editing-content-in-circular-builder">Editing Content in Circular Builder</h2>
+<p>Once content (promotions/cards) has been created and appears in the main table (data-grid) of the Circular Builder module, you can edit them at any time — either individually or in bulk.</p>
+<p>There are two main ways to edit content:</p>
+<ol>
+<li><strong>Individual Edit</strong> (one promotion at a time)</li>
+<li><strong>Bulk Edit</strong> (multiple promotions at once)</li>
+</ol>
+<h3 id="1-editing-a-single-promotion">1. Editing a Single Promotion</h3>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>In the Circular Builder main screen, locate the promotion you want to edit in the table.</li>
+<li>Select the desired row by clicking the checkbox at the beginning of the row (or simply click on the row if the interface allows direct selection).</li>
+<li>Click the <strong>Edit</strong> icon (usually a pencil) or double-click the row — this will open the promotion in the Editor tab.</li>
+<li>Alternatively, select the row and then click the <strong>Editor</strong> tab at the top of the interface.</li>
+</ol>
+<p>The <strong>Edit Single Promotion</strong> or <strong>EDITOR</strong> screen will open, showing all the current values of the promotion (very similar to the creation form).
+You can modify any field you need:</p>
+<ul>
+<li><strong>Title, Description, Category</strong></li>
+<li><strong>Deal Type, Price, Quantity Required, Limit</strong>, etc.</li>
+<li><strong>Dates</strong> (Starts on / Expires)</li>
+<li><strong>Media</strong> (change image, background, icons)</li>
+<li><strong>Size, Width, Height</strong></li>
+<li><strong>Headline, Coupon settings, Background color/image</strong>, etc.</li>
+</ul>
+<p>As soon as you finish making changes, the platform automatically saves the modifications in most cases.
+You may see a notification such as "You have made 1 change to your selected cards".
+In some views, you might need to click <strong>Update</strong> or <strong>Save</strong> to confirm.</p>
+<p>The <strong>preview panel</strong> on the right updates in real time so you can verify how the changes look.</p>
+<blockquote>
+<p><strong>Tip</strong>: Use the <strong>← Previous</strong> and <strong>Next →</strong> buttons to quickly navigate and edit several promotions one after another without returning to the main table.</p>
+</blockquote>
+<h3 id="2-bulk-editing-editing-multiple-promotions-at-once">2. Bulk Editing (Editing Multiple Promotions at Once)</h3>
+<p>Bulk editing is very useful when you need to apply the same change to many promotions simultaneously — for example:</p>
+<ul>
+<li>Change the category for a group of items</li>
+<li>Update the date range for an entire campaign</li>
+<li>Modify the deal type, size, background color, or any other common field across multiple cards</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>
+<p>In the main Circular Builder table, select two or more promotions:</p>
+<ul>
+<li>Click the checkbox at the beginning of each row you want to edit.</li>
+<li>Or use <strong>Shift + click</strong> or <strong>Ctrl + click</strong> to select multiple rows quickly.</li>
+</ul>
+</li>
+<li>
+<p>Once at least two items are selected, the system activates bulk editing mode.</p>
+<ul>
+<li>You will usually see a notification or the Editor tab becomes available for bulk.</li>
+</ul>
+</li>
+<li>
+<p>Click the <strong>Editor</strong> tab (now labeled something like <strong>Edit Multiple Promotions</strong>).</p>
+</li>
+<li>
+<p>The <strong>Edit Multiple Promotions</strong> screen opens:</p>
+<ul>
+<li>The form looks similar to the single edit form, but changes made here will apply to <strong>all selected promotions</strong>.</li>
+<li>Fields that currently have different values across the selected items may appear blank, with a "-" symbol, or highlighted in yellow.</li>
+</ul>
+</li>
+<li>
+<p><strong>Modify only the fields you want to update</strong> for all selected promotions.</p>
+<ul>
+<li>Examples:<ul>
+<li>Change <strong>Category</strong> → select a new one from the list</li>
+<li>Update <strong>Date range</strong> → set new Starts on / Expires dates</li>
+<li>Change <strong>Deal Type, Size, Background Color</strong>, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Leave fields blank if you do not want to change them (only modified fields will be applied).</p>
+</li>
+<li>
+<p>After making the desired changes, click the <strong>Update [X] Cards</strong> button (e.g., "Update 4 Cards").</p>
+</li>
+<li>
+<p>The system applies the changes to all selected promotions.</p>
+<ul>
+<li>A confirmation message appears (e.g., "You have made X changes to your selected cards").</li>
+<li>The updates are saved immediately.</li>
+</ul>
+</li>
+<li>
+<p>Return to the main table to verify that all selected promotions now reflect the new values.</p>
+</li>
+</ol>
+<p><strong>Important Notes on Bulk Editing:</strong></p>
+<ul>
+<li><strong>Only changed fields are applied</strong>. If you leave a field empty or unchanged, it will keep its original value for each promotion.</li>
+<li><strong>Mixed values warning</strong>: When selected promotions have different values in a field, the field may show "-" or be highlighted. Be careful — updating it will overwrite all variations with the new value.</li>
+<li><strong>No individual preview per card in bulk mode</strong> — the preview shows a representative example.</li>
+<li>Use bulk edit for <strong>consistency changes</strong> (category, dates, style, etc.). For very specific or unique edits, use single-item editing.</li>
+</ul>
+<p><strong>Best Practice:</strong>
+Always review a few items in the main table after a bulk edit to confirm the changes were applied correctly.</p>
+<h2 id="tips-and-best-practices">Tips and Best Practices</h2>
+<ul>
+<li><strong>Field Validation</strong>: If a required field is missing (such as Category), the system will display an error. Double-check the prerequisites.</li>
+<li><strong>Preview</strong>: Always verify the preview to ensure the design looks good in different sizes (e.g., 1×1, 2×2).</li>
+<li><strong>Group Management</strong>: For groups of content, repeat the process and use options like Bulk Upload when available.</li>
+<li><strong>Languages</strong>: The platform supports multiple languages (e.g., English, Español), as seen in the toggles in the screenshots.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://designhouse.design/" target="_blank" rel="noopener" title="designhouse.design" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

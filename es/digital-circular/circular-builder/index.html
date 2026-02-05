@@ -1,0 +1,2674 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Fernoel.github.io/ideal-docs/es/digital-circular/circular-builder/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../asset-library/">
+      
+      
+        
+          <link rel="alternate" href="/ideal-docs/" hreflang="en">
+        
+          <link rel="alternate" href="/ideal-docs/es/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Constructor de Circulares - Ideal Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modulo-circular-builder" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Ideal Documentation" class="md-header__button md-logo" aria-label="Ideal Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ideal Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Constructor de Circulares
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/ideal-docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ideal-docs/es/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Fernoel/ideal-docs" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ideal-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Circular Digital
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../retail-media/asset-library/" class="md-tabs__link">
+          
+  
+  
+  Medios Minoristas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../promotion-database/version-manager/" class="md-tabs__link">
+          
+  
+  
+  Base de Datos de Promociones
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../analytics/dashboard/" class="md-tabs__link">
+          
+  
+  
+  Analítica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../brand-admin/cpg-brands/" class="md-tabs__link">
+          
+  
+  
+  Administración de Marca
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer/setup/" class="md-tabs__link">
+          
+  
+  
+  Desarrollador
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../blog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Ideal Documentation" class="md-nav__button md-logo" aria-label="Ideal Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Ideal Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Fernoel/ideal-docs" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ideal-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Circular Digital
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Circular Digital
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructor de Circulares
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructor de Circulares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descripción General
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerrequisitos-para-crear-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerrequisitos para Crear Contenido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-basico-para-crear-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Trabajo Básico para Crear Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujo de Trabajo Básico para Crear Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-acceder-al-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Acceder al Módulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-iniciar-creacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Iniciar Creación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-completar-el-formulario-de-creacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Completar el Formulario de Creación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-guardar-el-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Guardar el Contenido
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-crear-contenido-usando-carga-masiva-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo Crear Contenido Usando Carga Masiva (Bulk Upload)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo Crear Contenido Usando Carga Masiva (Bulk Upload)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-paso-a-paso-para-carga-masiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Trabajo Paso a Paso para Carga Masiva
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujo de Trabajo Paso a Paso para Carga Masiva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acceder-a-carga-masiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceder a Carga Masiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-subir-tus-medios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1 – Subir tus Medios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-seleccionar-tu-rango-de-fechas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2 – Seleccionar tu Rango de Fechas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-carga-de-contenido-y-gestion-de-categorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3 – Carga de Contenido y Gestión de Categorías
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-revision-vista-previa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4 – Revisión / Vista Previa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-finalizar-y-guardar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 5 – Finalizar y Guardar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejos-para-cargas-masivas-exitosas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consejos para Cargas Masivas Exitosas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendiendo-la-plantilla-de-carga-masiva-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entendiendo la Plantilla de Carga Masiva de Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entendiendo la Plantilla de Carga Masiva de Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#donde-obtener-la-plantilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dónde Obtener la Plantilla
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columnas-principales-en-la-plantilla-de-carga-masiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Columnas Principales en la Plantilla de Carga Masiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reglas-clave-y-mejores-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reglas Clave y Mejores Prácticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-recomendado-para-preparar-un-archivo-masivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Trabajo Recomendado para Preparar un Archivo Masivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editando-contenido-en-circular-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editando Contenido en Circular Builder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editando Contenido en Circular Builder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-editando-una-sola-promocion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Editando una Sola Promoción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-edicion-masiva-editando-multiples-promociones-a-la-vez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Edición Masiva (Editando Múltiples Promociones a la Vez)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consejos-y-mejores-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consejos y Mejores Prácticas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asset-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteca de Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../card-styles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estilos de Tarjeta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categorías
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../icons-headlines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Íconos y Titulares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imported-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contenido Importado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Páginas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recipes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../store-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grupos de Tiendas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medios Minoristas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Medios Minoristas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../retail-media/asset-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteca de Recursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../retail-media/campaign-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constructor de Campañas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../retail-media/form-submissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Envíos de Formularios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de Datos de Promociones
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de Datos de Promociones
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../promotion-database/version-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestor de Versiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analítica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Analítica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analytics/dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Panel de Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administración de Marca
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Administración de Marca
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brand-admin/cpg-brands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marcas CPG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brand-admin/retail-brands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marcas Minoristas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brand-admin/user-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestión de Usuarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desarrollador
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Desarrollador
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitectura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencia API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descripción General
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerrequisitos-para-crear-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerrequisitos para Crear Contenido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-basico-para-crear-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Trabajo Básico para Crear Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujo de Trabajo Básico para Crear Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-acceder-al-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Acceder al Módulo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-iniciar-creacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Iniciar Creación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-completar-el-formulario-de-creacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Completar el Formulario de Creación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-guardar-el-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Guardar el Contenido
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-crear-contenido-usando-carga-masiva-bulk-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo Crear Contenido Usando Carga Masiva (Bulk Upload)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo Crear Contenido Usando Carga Masiva (Bulk Upload)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-paso-a-paso-para-carga-masiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Trabajo Paso a Paso para Carga Masiva
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujo de Trabajo Paso a Paso para Carga Masiva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acceder-a-carga-masiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceder a Carga Masiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-subir-tus-medios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1 – Subir tus Medios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-seleccionar-tu-rango-de-fechas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2 – Seleccionar tu Rango de Fechas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-carga-de-contenido-y-gestion-de-categorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3 – Carga de Contenido y Gestión de Categorías
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-revision-vista-previa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4 – Revisión / Vista Previa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-finalizar-y-guardar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 5 – Finalizar y Guardar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejos-para-cargas-masivas-exitosas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consejos para Cargas Masivas Exitosas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendiendo-la-plantilla-de-carga-masiva-de-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entendiendo la Plantilla de Carga Masiva de Contenido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entendiendo la Plantilla de Carga Masiva de Contenido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#donde-obtener-la-plantilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dónde Obtener la Plantilla
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columnas-principales-en-la-plantilla-de-carga-masiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Columnas Principales en la Plantilla de Carga Masiva
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reglas-clave-y-mejores-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reglas Clave y Mejores Prácticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-recomendado-para-preparar-un-archivo-masivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo de Trabajo Recomendado para Preparar un Archivo Masivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editando-contenido-en-circular-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editando Contenido en Circular Builder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editando Contenido en Circular Builder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-editando-una-sola-promocion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Editando una Sola Promoción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-edicion-masiva-editando-multiples-promociones-a-la-vez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Edición Masiva (Editando Múltiples Promociones a la Vez)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consejos-y-mejores-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consejos y Mejores Prácticas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="modulo-circular-builder">Módulo Circular Builder</h1>
+<h2 id="descripcion-general">Descripción General</h2>
+<p>El módulo Circular Builder es el núcleo para crear contenido para volantes digitales. Aquí puedes generar promociones, ofertas y elementos visuales que se integran en los volantes. La interfaz principal incluye:</p>
+<ul>
+<li>Un menú lateral izquierdo con opciones como Dashboard, Digital Circular, Circular Builder, Categorías, etc.</li>
+<li>Un selector de tienda o marca (por ejemplo, "Fernando First Store").</li>
+<li>Un calendario para seleccionar fechas de publicación.</li>
+<li>Una tabla (data-grid) que lista los elementos de contenido existentes, con columnas como DÍAS (días de validez), TIPO DE OFERTA (deal type), PROPIETARIO (owner), TAMAÑO (size) y opciones de ver/editar.</li>
+<li>Un panel de vista previa a la derecha que muestra tarjetas de promoción con imágenes, precios y descuentos.</li>
+</ul>
+<p>![Interfaz principal de Circular Builder]](../assets/screenshots/content%20(1).png)</p>
+<blockquote>
+<p><em>Interfaz principal de Circular Builder con tabla de contenido y vista previa.</em></p>
+</blockquote>
+<h2 id="prerrequisitos-para-crear-contenido">Prerrequisitos para Crear Contenido</h2>
+<p>Antes de crear nuevo contenido, asegúrate de cumplir con los siguientes prerrequisitos:</p>
+<ol>
+<li><strong>Creación de Nodo</strong>: Debes haber creado al menos un nodo, que puede ser una Marca, Sub-Marca o Tienda. Esto define el contexto en el que se aplicará el contenido.</li>
+<li><strong>Creación de Categoría</strong>: Es obligatorio tener al menos una categoría creada en el módulo de Categorías. Sin una categoría asignada, no podrás completar la creación del contenido, ya que es un campo requerido.</li>
+</ol>
+<p>!!! warning "Requisito"
+    Si no se cumplen estos prerrequisitos, el sistema no te permitirá guardar el nuevo contenido. Ve a los módulos correspondientes (por ejemplo, Marcas Retail o Categorías) para configurarlos primero.</p>
+<h2 id="flujo-de-trabajo-basico-para-crear-contenido">Flujo de Trabajo Básico para Crear Contenido</h2>
+<p>Sigue estos pasos para crear un nuevo elemento de contenido en Circular Builder:</p>
+<h3 id="1-acceder-al-modulo">1. Acceder al Módulo</h3>
+<ul>
+<li>Inicia sesión en la plataforma como administrador.</li>
+<li>En el menú lateral izquierdo, selecciona <strong>Digital Circular &gt; Circular Builder</strong>.</li>
+<li>Elige la tienda o marca deseada en el selector superior (por ejemplo, "Biswa First Store").</li>
+</ul>
+<h3 id="2-iniciar-creacion">2. Iniciar Creación</h3>
+<ul>
+<li>En la interfaz principal, haz clic en el botón <strong>New Card</strong> (o "New Content", dependiendo de la versión).</li>
+<li>Esto abrirá una nueva pestaña o formulario de creación titulado "Create Single Promotion" o similar.</li>
+</ul>
+<h3 id="3-completar-el-formulario-de-creacion">3. Completar el Formulario de Creación</h3>
+<p>El formulario se divide en secciones como Contenido, Oferta/Deal, Rango de Fechas, Medios, Encabezado, Fondo, etc.
+Completa todos los campos requeridos (marcados con *). Los campos clave incluyen:</p>
+<ul>
+<li><strong>Contenido</strong>: Título, Descripción, Texto de Fecha (Display), Categoría (selecciona una existente), Ancho, Alto y Tamaño (por ejemplo, Pequeño).</li>
+<li><strong>Oferta/Deal</strong>: Estilo de Tarjeta (por ejemplo, Cupón), Tipo de Oferta (por ejemplo, Estática (Sin Precio), Precio Fijo, Compra X Obtén Y por Z), Cantidad Requerida, Límite, UPC (código de producto).</li>
+<li><strong>Cupón</strong>: Si aplica, incluye manualmente un cupón con ID de Cupón, Requerido, Límite y Descuento (Amount Off).</li>
+<li><strong>Rango de Fechas</strong>: Fechas de inicio (Starts on) y vencimiento (Expires).</li>
+<li><strong>Medios</strong>: Carga o selecciona medios (imágenes, iconos), encabezado (Headline), fondo (Color de Fondo o Imagen), posición (Position - por ejemplo, Centro).</li>
+<li><strong>Vista Previa</strong>: Usa el panel de vista previa a la derecha para ver cómo lucirá la promoción en tiempo real.</li>
+</ul>
+<blockquote>
+<p>Asegúrate de que todos los campos obligatorios estén completos; de lo contrario, no podrás guardar.</p>
+</blockquote>
+<p><img alt="Formulario de creación" src="../../assets/screenshots/content.png" /></p>
+<blockquote>
+<p><em>Formulario de creación "Create Single Promotion" con secciones y vista previa.</em></p>
+</blockquote>
+<h3 id="4-guardar-el-contenido">4. Guardar el Contenido</h3>
+<ul>
+<li>Una vez completados todos los campos, haz clic en <strong>Save</strong> o <strong>Create</strong> (el botón puede variar según la interfaz).</li>
+<li>El nuevo contenido aparecerá automáticamente en la tabla principal (data-grid) del módulo Circular Builder.</li>
+<li>Puedes editar, eliminar o previsualizar el contenido desde la tabla usando los iconos correspondientes (por ejemplo, icono de ojo para ver, tijeras para editar).</li>
+</ul>
+<h2 id="como-crear-contenido-usando-carga-masiva-bulk-upload">Cómo Crear Contenido Usando Carga Masiva (Bulk Upload)</h2>
+<p>La función de Carga Masiva de Contenido te permite crear múltiples elementos de contenido a la vez subiendo un archivo masivo formateado correctamente (típicamente una hoja de cálculo o archivo estructurado que contiene datos de promociones) junto con los archivos multimedia asociados. Esto es especialmente útil cuando necesitas crear docenas o cientos de promociones en una sola operación.</p>
+<p>!!! important "Prerrequisito Importante"
+    Antes de usar la Carga Masiva, debes preparar y tener listo un archivo de Carga Masiva de Contenido válido. Este archivo debe seguir el formato y estructura exactos esperados por la plataforma (columnas, campos requeridos, convenciones de nomenclatura, etc.). Contacta a tu administrador o consulta la Documentación de Plantilla de Carga Masiva (si está disponible) para obtener la plantilla e instrucciones correctas.</p>
+<h3 id="flujo-de-trabajo-paso-a-paso-para-carga-masiva">Flujo de Trabajo Paso a Paso para Carga Masiva</h3>
+<h4 id="acceder-a-carga-masiva">Acceder a Carga Masiva</h4>
+<ol>
+<li>Ve al módulo Circular Builder.</li>
+<li>Selecciona la tienda/marca deseada usando el selector superior (por ejemplo, "Fernando First Store").</li>
+<li>En la interfaz principal, haz clic en el botón <strong>Bulk Upload</strong> (generalmente ubicado cerca del botón "New Card").</li>
+<li>Esta acción abre el asistente de Gestión de Contenido titulado algo como "Manage Content for [Store Name]".</li>
+</ol>
+<h4 id="paso-1-subir-tus-medios">Paso 1 – Subir tus Medios</h4>
+<ul>
+<li>Verás un área de arrastrar y soltar etiquetada como "Drop your media files here" y un botón <strong>+ Choose</strong>.</li>
+<li><strong>Importante</strong>: El sistema solo acepta formatos de archivo de imagen y video. Otros tipos de archivo serán rechazados.</li>
+<li>Arrastra y suelta tus archivos multimedia o haz clic en <strong>+ Choose</strong> para seleccionarlos desde tu computadora.</li>
+<li>Espera hasta que todos los archivos terminen de subirse completamente.<ul>
+<li>Un indicador de progreso o columna de estado mostrará cuando cada archivo haya sido procesado exitosamente.</li>
+<li>Solo cuando todas las cargas estén completas se activará el botón <strong>Next</strong>.</li>
+</ul>
+</li>
+<li>Haz clic en <strong>Next</strong> para continuar.</li>
+</ul>
+<h4 id="paso-2-seleccionar-tu-rango-de-fechas">Paso 2 – Seleccionar tu Rango de Fechas</h4>
+<ul>
+<li>En este paso, puedes definir un rango de fechas común que se aplicará a todos (o la mayoría) de los elementos de contenido que se están subiendo.</li>
+<li>Usa los controles de calendario para establecer las fechas de <strong>Starts on</strong> (Inicio) y <strong>Expires</strong> (Vencimiento).</li>
+<li>Si no necesitas un rango de fechas específico para esta operación masiva (o si las fechas ya están definidas en el archivo masivo), simplemente haz clic en <strong>Next</strong> para omitir este paso.</li>
+</ul>
+<h4 id="paso-3-carga-de-contenido-y-gestion-de-categorias">Paso 3 – Carga de Contenido y Gestión de Categorías</h4>
+<p>El sistema procesa el archivo masivo subido e intenta coincidir o crear categorías.</p>
+<p><strong>Comportamiento dependiendo de las categorías:</strong>
+- <strong>Si las categorías ya existen en el nodo actual (marca/tienda)</strong>: Aparecerá un mensaje de éxito indicando que las categorías fueron encontradas o coincidieron exitosamente.
+- <strong>Si las categorías son nuevas para este nodo</strong>: Verás dos opciones principales para cada nueva categoría:
+    - <strong>Create</strong>: Haz clic en el botón Create para generar automáticamente la nueva categoría en el sistema.
+    - <strong>Map</strong>: Selecciona una categoría existente de la lista desplegable y mapea el nombre de la nueva categoría a una ya existente.
+- <strong>Opción Ignorar</strong>: Marca la casilla Ignore para categorías individuales o usa una opción "Select All / Ignore All" si está disponible. Las categorías ignoradas no serán creadas ni mapeadas.</p>
+<p>Después de manejar todas las categorías (crear, mapear o ignorar), haz clic en <strong>Next</strong>.</p>
+<p>!!! warning "Nota Importante sobre Ignorar Categorías"
+    - Si ignoras una o más categorías, el sistema te permitirá continuar.
+    - Sin embargo, en el paso de vista previa (Paso 5), cualquier elemento de contenido sin una categoría asignada será marcado con un error.
+    - <strong>Para corregir estos errores</strong>:
+        1. Haz clic en el icono de edición en el elemento de contenido afectado, o
+        2. Haz clic en el mensaje/notificación de error para abrir la herramienta de asignación de categorías.
+        3. Asigna una categoría válida y guarda.</p>
+<h4 id="paso-4-revision-vista-previa">Paso 4 – Revisión / Vista Previa</h4>
+<p>Este paso muestra una vista previa completa de todos los elementos de contenido que serán creados desde el archivo masivo.
+Revisa la tabla cuidadosamente:
+- Verifica títulos, tipos de oferta, tamaños, asignaciones de medios, fechas, categorías, etc.
+- Busca cualquier indicador de error (especialmente categorías faltantes).</p>
+<blockquote>
+<p>Corrige cualquier problema directamente en esta vista si la interfaz permite la edición en línea, o regresa a los pasos anteriores.</p>
+</blockquote>
+<h4 id="paso-5-finalizar-y-guardar">Paso 5 – Finalizar y Guardar</h4>
+<p>Verás una tabla final listando todos los elementos de contenido que serán creados.
+En esta tabla puedes:
+- <strong>Eliminar</strong> elementos individuales (si no deseas crearlos)
+- <strong>Editar</strong> elementos individuales (modificar título, tipo de oferta, categoría, medios, etc.)</p>
+<p>Cuando todo se vea correcto y no haya errores restantes, haz clic en el botón <strong>Done</strong>.
+El sistema comenzará a procesar y guardar todos los elementos de contenido.
+Una vez completado, serás redirigido de vuelta a la tabla principal de Circular Builder, donde aparecerán los elementos de contenido recién creados.</p>
+<h3 id="consejos-para-cargas-masivas-exitosas">Consejos para Cargas Masivas Exitosas</h3>
+<ul>
+<li><strong>Usa siempre la plantilla oficial</strong> proporcionada por la plataforma para evitar errores de formato.</li>
+<li><strong>Sube todos los archivos multimedia relacionados</strong> antes o junto con el procesamiento del archivo masivo.</li>
+<li><strong>Sé paciente durante la carga de medios</strong> — no cierres la ventana ni navegues fuera hasta que todos los archivos muestren 100% completo.</li>
+<li><strong>Resuelve problemas de categorías</strong> antes del guardado final para evitar tener que editar muchos elementos individualmente más tarde.</li>
+<li><strong>Después de una carga masiva exitosa</strong>, usa el botón Export en la tabla principal para descargar y verificar el contenido recién creado.</li>
+</ul>
+<h2 id="entendiendo-la-plantilla-de-carga-masiva-de-contenido">Entendiendo la Plantilla de Carga Masiva de Contenido</h2>
+<p>La función de Carga Masiva de Contenido se basa en un archivo estructurado (usualmente un <code>.xlsx</code>, <code>.xls</code> o <code>.csv</code>) que contiene toda la información necesaria para crear múltiples tarjetas de promoción a la vez. Esta plantilla define exactamente qué columnas se esperan, cuáles son obligatorias y qué tipo de datos deben ir en cada una.</p>
+<h3 id="donde-obtener-la-plantilla">Dónde Obtener la Plantilla</h3>
+<ul>
+<li><strong>La forma más confiable</strong> es solicitar la Plantilla de Carga Masiva oficial a tu administrador de plataforma o al equipo de soporte.</li>
+<li>En algunas versiones de la plataforma, puede haber un botón o enlace de <strong>Descargar Plantilla</strong> dentro del asistente de Carga Masiva (generalmente visible después de hacer clic en "Bulk Upload").</li>
+<li>Si no hay una plantilla disponible, contacta a soporte a través del módulo Support Portal para solicitar la versión actual.</li>
+</ul>
+<p>!!! important "Importante"
+    Usar un archivo que no coincida con la estructura esperada causará errores durante la carga. Usa siempre la plantilla oficial o más reciente.</p>
+<h3 id="columnas-principales-en-la-plantilla-de-carga-masiva">Columnas Principales en la Plantilla de Carga Masiva</h3>
+<p>A continuación se muestra la estructura típica de la plantilla (los nombres exactos de las columnas y el orden pueden variar ligeramente según la versión de la plataforma — verifica siempre con tu plantilla actual).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nombre de Columna</th>
+<th style="text-align: center;">¿Requerido?</th>
+<th style="text-align: left;">Descripción / Formato Esperado</th>
+<th style="text-align: left;">Valores de Ejemplo</th>
+<th style="text-align: left;">Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Title</strong></td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: left;">El título principal de la tarjeta de promoción (en inglés o el idioma seleccionado)</td>
+<td style="text-align: left;"><code>"2x1 en Pastas"</code></td>
+<td style="text-align: left;">Mantenlo corto y atractivo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Descripción más larga o detalles de la oferta</td>
+<td style="text-align: left;"><code>"Lleva 2 paquetes y paga solo 1"</code></td>
+<td style="text-align: left;">Puede incluir saltos de línea si el sistema lo soporta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Deal Type</strong></td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: left;">El tipo de oferta / promoción</td>
+<td style="text-align: left;"><code>Fixed Price</code>, <code>Buy X Get Y For Z</code>, <code>Amount Off</code>, <code>Static (No Price)</code>, <code>Coupon</code>, <code># for Price</code></td>
+<td style="text-align: left;">Debe coincidir exactamente con uno de los valores permitidos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Card Style</strong></td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: left;">Estilo visual de la tarjeta</td>
+<td style="text-align: left;"><code>Coupon</code>, <code>Banner</code>, <code>Standard</code>, <code>Menu Item</code></td>
+<td style="text-align: left;">Afecta el diseño y los campos disponibles</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Size</strong></td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: left;">Tamaño de cuadrícula de la tarjeta en el volante</td>
+<td style="text-align: left;"><code>1x1</code>, <code>1x2</code>, <code>2x1</code>, <code>2x2</code>, <code>3x1</code>, etc.</td>
+<td style="text-align: left;">Valores comunes: 1×1, 1×2, 2×2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Width</strong></td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: left;">Valor del ancho (numérico)</td>
+<td style="text-align: left;"><code>1</code>, <code>2</code>, <code>3</code></td>
+<td style="text-align: left;">Usualmente coincide con el primer número en Size</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Height</strong></td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: left;">Valor de la altura (numérico)</td>
+<td style="text-align: left;"><code>1</code>, <code>2</code></td>
+<td style="text-align: left;">Usualmente coincide con el segundo número en Size</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: left;">Nombre de la categoría donde pertenece esta promoción</td>
+<td style="text-align: left;"><code>"Bebidas"</code>, <code>"Lácteos"</code>, <code>"Frutas y Verduras"</code></td>
+<td style="text-align: left;">Debe existir o será creada/mapeada en el paso 3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Starts On</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Fecha de inicio de la promoción</td>
+<td style="text-align: left;"><code>2026-02-08 00:00</code></td>
+<td style="text-align: left;">Formato: YYYY-MM-DD HH:MM o solo YYYY-MM-DD</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Expires</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Fecha de fin de la promoción</td>
+<td style="text-align: left;"><code>2026-02-14 23:59</code></td>
+<td style="text-align: left;">Si está vacío, puede usar un rango de fechas predeterminado o global</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Coupon ID</strong></td>
+<td style="text-align: center;">Condicional</td>
+<td style="text-align: left;">Identificador único para el cupón (solo si Deal Type = Coupon)</td>
+<td style="text-align: left;"><code>CUPON2026-XYZ123</code></td>
+<td style="text-align: left;">Requerido solo para promociones estilo cupón</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Amount Off</strong></td>
+<td style="text-align: center;">Condicional</td>
+<td style="text-align: left;">Cantidad de descuento (moneda o porcentaje)</td>
+<td style="text-align: left;"><code>5.99</code>, <code>30%</code>, <code>$4.00 OFF</code></td>
+<td style="text-align: left;">Depende del Deal Type</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Quantity Required</strong></td>
+<td style="text-align: center;">Condicional</td>
+<td style="text-align: left;">Número de artículos necesarios para activar la oferta</td>
+<td style="text-align: left;"><code>2</code></td>
+<td style="text-align: left;">Usado en ofertas tipo "Buy X Get Y"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Limit</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Usos máximos por cliente o límite total</td>
+<td style="text-align: left;"><code>1</code>, <code>4</code>, <code>Unlimited</code></td>
+<td style="text-align: left;">"Unlimited" o dejar en blanco si no hay límite</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>UPC / SKU</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Código(s) de producto – puede ser uno o múltiples (separados por comas)</td>
+<td style="text-align: left;"><code>7501234567890</code>, <code>7509876543210</code></td>
+<td style="text-align: left;">Usado para promociones específicas de producto</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Media Filename 1</strong></td>
+<td style="text-align: center;">Condicional</td>
+<td style="text-align: left;">Nombre del archivo de imagen principal (debe subirse en el Paso 1)</td>
+<td style="text-align: left;"><code>promo_bebidas_2x1.jpg</code></td>
+<td style="text-align: left;">Nombre exacto incluyendo extensión</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Media Filename 2</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Imagen secundaria o icono</td>
+<td style="text-align: left;"><code>icon_descuento.png</code></td>
+<td style="text-align: left;">Opcional – depende del estilo de tarjeta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Headline</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Texto corto resaltado (a menudo aparece en negrita)</td>
+<td style="text-align: left;"><code>"¡Oferta Exclusiva!"</code></td>
+<td style="text-align: left;">Opcional pero recomendado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Background Color</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Código de color Hex para fondo</td>
+<td style="text-align: left;"><code>#FF0000</code>, <code>#FFFFFF</code></td>
+<td style="text-align: left;">Solo si no se usa imagen de fondo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Language</strong></td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Código de idioma de esta fila</td>
+<td style="text-align: left;"><code>EN</code>, <code>ES</code></td>
+<td style="text-align: left;">Usualmente EN o ES – por defecto el idioma de la plataforma si está vacío</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reglas-clave-y-mejores-practicas">Reglas Clave y Mejores Prácticas</h3>
+<ul>
+<li><strong>Los campos requeridos</strong> deben llenarse en cada fila. Valores requeridos faltantes causarán que toda la fila (o toda la carga) falle.</li>
+<li><strong>Coincidencia exacta para campos controlados</strong>: Deal Type, Card Style, Size, etc. deben coincidir con los valores que el sistema reconoce (distingue mayúsculas y minúsculas en la mayoría de los casos).</li>
+<li><strong>Fechas</strong>: Usa un formato consistente (preferiblemente AAAA-MM-DD). Si las dejas en blanco, se pueden aplicar las fechas definidas en el Paso 2 (o un rango predeterminado).</li>
+<li><strong>Archivos de medios</strong>: Los nombres de archivo en la hoja de cálculo deben coincidir exactamente con los nombres de los archivos que subes en el Paso 1 (incluyendo extensión: <code>.jpg</code>, <code>.png</code>, <code>.mp4</code>, etc.).</li>
+<li><strong>Una fila = una tarjeta de promoción</strong>. Cada fila en la hoja de cálculo crea una tarjeta de contenido/promoción individual.</li>
+<li><strong>Categorías</strong>: Si el nombre de la categoría no existe en la marca/tienda actual, se te pedirá que la crees o mapees en el Paso 3.</li>
+<li><strong>Validación</strong>: El sistema realiza validación durante el procesamiento. Errores comunes incluyen:<ul>
+<li>Columnas requeridas faltantes</li>
+<li>Valores inválidos de Deal Type o Size</li>
+<li>Nombre de archivo de medio no encontrado entre los archivos subidos</li>
+<li>Categoría no resuelta (no creada/mapeada/ignorada)</li>
+</ul>
+</li>
+</ul>
+<h3 id="flujo-de-trabajo-recomendado-para-preparar-un-archivo-masivo">Flujo de Trabajo Recomendado para Preparar un Archivo Masivo</h3>
+<ol>
+<li><strong>Descarga la plantilla oficial</strong>.</li>
+<li><strong>Llena tus promociones fila por fila</strong> (una promoción = una fila).</li>
+<li><strong>Prepara todas las imágenes/videos</strong> referenciados en las columnas "Media Filename".</li>
+<li><strong>Guarda el archivo</strong> (preferiblemente <code>.xlsx</code>).</li>
+<li><strong>Ve a Circular Builder</strong> → haz clic en <strong>Bulk Upload</strong>.</li>
+<li><strong>Sube tus archivos de medios primero</strong> (Paso 1).</li>
+<li><strong>Avanza a través del asistente</strong>, mapeando categorías según sea necesario.</li>
+<li><strong>Revisa todo cuidadosamente</strong> en el paso de vista previa.</li>
+<li><strong>Haz clic en Done</strong> cuando estés listo.</li>
+</ol>
+<blockquote>
+<p><strong>Consejo</strong>: Si tienes dudas sobre valores específicos de columnas u opciones permitidas (por ejemplo, la lista completa de Tipos de Oferta o Estilos de Tarjeta), pregunta a tu administrador o verifica dentro de la plataforma creando una sola promoción primero para ver las opciones desplegables.</p>
+</blockquote>
+<h2 id="editando-contenido-en-circular-builder">Editando Contenido en Circular Builder</h2>
+<p>Una vez que el contenido (promociones/tarjetas) ha sido creado y aparece en la tabla principal (data-grid) del módulo Circular Builder, puedes editarlo en cualquier momento — ya sea individualmente o de forma masiva.</p>
+<p>Existen dos formas principales de editar contenido:</p>
+<ol>
+<li><strong>Edición Individual</strong> (una promoción a la vez)</li>
+<li><strong>Edición Masiva</strong> (múltiples promociones a la vez)</li>
+</ol>
+<h3 id="1-editando-una-sola-promocion">1. Editando una Sola Promoción</h3>
+<p><strong>Pasos:</strong></p>
+<ol>
+<li>En la pantalla principal de Circular Builder, localiza la promoción que deseas editar en la tabla.</li>
+<li>Selecciona la fila deseada haciendo clic en la casilla de verificación al principio de la fila (o simplemente haz clic en la fila si la interfaz permite la selección directa).</li>
+<li>Haz clic en el icono <strong>Edit</strong> (usualmente un lápiz) o haz doble clic en la fila — esto abrirá la promoción en la pestaña Editor.</li>
+<li>Alternativamente, selecciona la fila y luego haz clic en la pestaña <strong>Editor</strong> en la parte superior de la interfaz.</li>
+</ol>
+<p>La pantalla <strong>Edit Single Promotion</strong> o <strong>EDITOR</strong> se abrirá, mostrando todos los valores actuales de la promoción (muy similar al formulario de creación).
+Puedes modificar cualquier campo que necesites:</p>
+<ul>
+<li><strong>Título, Descripción, Categoría</strong></li>
+<li><strong>Tipo de Oferta, Precio, Cantidad Requerida, Límite</strong>, etc.</li>
+<li><strong>Fechas</strong> (Inicio / Vencimiento)</li>
+<li><strong>Medios</strong> (cambiar imagen, fondo, iconos)</li>
+<li><strong>Tamaño, Ancho, Alto</strong></li>
+<li><strong>Encabezado, configuración de Cupón, color/imagen de Fondo</strong>, etc.</li>
+</ul>
+<p>Tan pronto como termines de hacer cambios, la plataforma guarda automáticamente las modificaciones en la mayoría de los casos.
+Puedes ver una notificación como "You have made 1 change to your selected cards" (Has realizado 1 cambio en tus tarjetas seleccionadas).
+En algunas vistas, es posible que necesites hacer clic en <strong>Update</strong> o <strong>Save</strong> para confirmar.</p>
+<p>El <strong>panel de vista previa</strong> a la derecha se actualiza en tiempo real para que puedas verificar cómo se ven los cambios.</p>
+<blockquote>
+<p><strong>Consejo</strong>: Usa los botones <strong>← Previous</strong> y <strong>Next →</strong> para navegar y editar rápidamente varias promociones una tras otra sin volver a la tabla principal.</p>
+</blockquote>
+<h3 id="2-edicion-masiva-editando-multiples-promociones-a-la-vez">2. Edición Masiva (Editando Múltiples Promociones a la Vez)</h3>
+<p>La edición masiva es muy útil cuando necesitas aplicar el mismo cambio a muchas promociones simultáneamente — por ejemplo:</p>
+<ul>
+<li>Cambiar la categoría para un grupo de artículos</li>
+<li>Actualizar el rango de fechas para una campaña completa</li>
+<li>Modificar el tipo de oferta, tamaño, color de fondo o cualquier otro campo común en múltiples tarjetas</li>
+</ul>
+<p><strong>Pasos:</strong></p>
+<ol>
+<li>
+<p>En la tabla principal de Circular Builder, selecciona dos o más promociones:</p>
+<ul>
+<li>Haz clic en la casilla de verificación al principio de cada fila que desees editar.</li>
+<li>O usa <strong>Shift + clic</strong> o <strong>Ctrl + clic</strong> para seleccionar múltiples filas rápidamente.</li>
+</ul>
+</li>
+<li>
+<p>Una vez que al menos dos elementos están seleccionados, el sistema activa el modo de edición masiva.</p>
+<ul>
+<li>Usualmente verás una notificación o la pestaña Editor se volverá disponible para edición masiva.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en la pestaña <strong>Editor</strong> (ahora etiquetada algo como <strong>Edit Multiple Promotions</strong>).</p>
+</li>
+<li>
+<p>La pantalla <strong>Edit Multiple Promotions</strong> se abre:</p>
+<ul>
+<li>El formulario se ve similar al formulario de edición individual, pero los cambios realizados aquí se aplicarán a <strong>todas las promociones seleccionadas</strong>.</li>
+<li>Los campos que actualmente tienen valores diferentes entre los elementos seleccionados pueden aparecer en blanco, con un símbolo "-", o resaltados en amarillo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Modifica solo los campos que deseas actualizar</strong> para todas las promociones seleccionadas.</p>
+<ul>
+<li>Ejemplos:<ul>
+<li>Cambiar <strong>Categoría</strong> → selecciona una nueva de la lista</li>
+<li>Actualizar <strong>Rango de Fechas</strong> → establece nuevas fechas de Inicio / Vencimiento</li>
+<li>Cambiar <strong>Tipo de Oferta, Tamaño, Color de Fondo</strong>, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Deja los campos en blanco si no deseas cambiarlos (solo los campos modificados serán aplicados).</p>
+</li>
+<li>
+<p>Después de hacer los cambios deseados, haz clic en el botón <strong>Update [X] Cards</strong> (por ejemplo, "Update 4 Cards").</p>
+</li>
+<li>
+<p>El sistema aplica los cambios a todas las promociones seleccionadas.</p>
+<ul>
+<li>Aparece un mensaje de confirmación (por ejemplo, "You have made X changes to your selected cards").</li>
+<li>Las actualizaciones se guardan inmediatamente.</li>
+</ul>
+</li>
+<li>
+<p>Regresa a la tabla principal para verificar que todas las promociones seleccionadas ahora reflejen los nuevos valores.</p>
+</li>
+</ol>
+<p><strong>Notas Importantes sobre Edición Masiva:</strong></p>
+<ul>
+<li><strong>Solo se aplican los campos cambiados</strong>. Si dejas un campo vacío o sin cambios, mantendrá su valor original para cada promoción.</li>
+<li><strong>Advertencia de valores mixtos</strong>: Cuando las promociones seleccionadas tienen valores diferentes en un campo, el campo puede mostrar "-" o estar resaltado. Ten cuidado — actualizarlo sobrescribirá todas las variaciones con el nuevo valor.</li>
+<li><strong>Sin vista previa individual por tarjeta en modo masivo</strong> — la vista previa muestra un ejemplo representativo.</li>
+<li>Usa la edición masiva para <strong>cambios de consistencia</strong> (categoría, fechas, estilo, etc.). Para ediciones muy específicas o únicas, usa la edición individual.</li>
+</ul>
+<p><strong>Mejor Práctica:</strong>
+Siempre revisa algunos elementos en la tabla principal después de una edición masiva para confirmar que los cambios se aplicaron correctamente.</p>
+<h2 id="consejos-y-mejores-practicas">Consejos y Mejores Prácticas</h2>
+<ul>
+<li><strong>Validación de Campos</strong>: Si falta un campo requerido (como Categoría), el sistema mostrará un error. Verifica nuevamente los prerrequisitos.</li>
+<li><strong>Vista Previa</strong>: Verifica siempre la vista previa para asegurarte de que el diseño se vea bien en diferentes tamaños (por ejemplo, 1×1, 2×2).</li>
+<li><strong>Gestión de Grupos</strong>: Para grupos de contenido, repite el proceso y usa opciones como Carga Masiva (Bulk Upload) cuando estén disponibles.</li>
+<li><strong>Idiomas</strong>: La plataforma soporta múltiples idiomas (por ejemplo, Inglés, Español), como se ve en los interruptores en las capturas de pantalla.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://designhouse.design/" target="_blank" rel="noopener" title="designhouse.design" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
